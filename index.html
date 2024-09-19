@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Belajar Kalkulus</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Belajar Kalkulus</h1>
+        <nav>
+            <ul>
+                <li><a href="#introduction">Pengenalan</a></li>
+                <li><a href="#derivative">Derivatif</a></li>
+                <li><a href="#integral">Integral</a></li>
+                <li><a href="#practice">Latihan</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="introduction">
+            <h2>Pengenalan Kalkulus</h2>
+            <p>Kalkulus adalah suatu cabang matematika yang mempelajari tentang perubahan-perubahan fungsi. Terdapat dua cabang utama dalam kalkulus yaitu diferensial dan integral.</p>
+            <img src="kalkulus.jpg" alt="Pengenalan Kalkulus" width="500" height="300">
+        </section>
+        <section id="derivative">
+            <h2>Derivatif</h2>
+            <p>Derivatif adalah suatu konsep dalam kalkulus yang digunakan untuk menghitung perubahan fungsi terhadap variabel inputnya.</p>
+            <p>Contoh:</p>
+            <p>Apabila kita memiliki fungsi f(x) = x^2, maka derivatifnya adalah f'(x) = 2x.</p>
+            <img src="derivative.jpg" alt="Derivatif" width="500" height="300">
+            <div class="example">
+                <h3>Contoh Soal:</h3>
+                <p>Apabila kita memiliki fungsi f(x) = x^3, maka derivatifnya adalah?</p>
+                <input type="text" id="derivative-input" placeholder="Masukkan jawaban">
+                <button onclick="checkDerivative()">Cek Jawaban</button>
+                <p id="result"></p>
+            </div>
+        </section>
+        <section id="integral">
+            <h2>Integral</h2>
+            <p>Integral adalah suatu konsep dalam kalkulus yang digunakan untuk menghitung luas atau volume suatu bentuk geometris.</p>
+            <p>Contoh:</p>
+            <p>Apabila kita memiliki fungsi f(x) = x^2, maka integralnya dari 0 hingga 1 adalah ∫[0,1] x^2 dx = (1/3)x^3 | dari 0 hingga 1 = (1/3)(1)^3 - (1/3)(0)^3 = 1/3.</p>
+            <img src="integral.jpg" alt="Integral" width="500" height="300">
+        </section>
+        <section id="practice">
+            <h2>Latihan Kalkulus</h2>
+            <p>Di bawah ini adalah beberapa contoh soal latihan untuk memahami konsep-konsep dasar dalam kalkulus.</p>
+            <div class="practice-question">
+                <h3>Soal 1:</h3>
+                <p>Apabila kita memiliki fungsi f(x) = x^2 + 3x - 4, maka:</p>
+                <ul>
+                    <li>Derivatifnya adalah?</li>
+                    <li>Integralnya dari 0 hingga 2 adalah?</li>
+                </ul>
+                <input type="text" id="practice-input-1" placeholder="Masukkan jawaban derivatif">
+                <input type="text" id="practice-input-2" placeholder="Masukkan jawaban integral">
+                <button onclick="checkPractice()">Cek Jawaban</button>
+                <p id="practice-result"></p>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Belajar Kalkulus</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
